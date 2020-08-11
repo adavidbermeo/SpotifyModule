@@ -1,0 +1,21 @@
+{# My custom template #}
+<div class="container">
+ 
+  {% for key,value in test_var.spotify_releases.artist_ids %}
+  {# {{ kint(test_var) }} #}
+
+    <div class="row">
+    
+        
+        <div class="col-sm"> <img src={{ test_var.spotify_releases.track_image[key] }}>  </div><br>
+        <div class="col-sm"> {{ test_var.spotify_releases.track_name[key] }}  </div><br>
+        <div class="col-sm">  <a href="{{ 'http://spotifymusic.dd:8083/artista/' ~  test_var.spotify_releases.artist_ids[key] }}" target="_blank"> {{ test_var.spotify_releases.artist_names[key] }} </div></a> <br>
+        
+
+    </div>
+  {% endfor %} 
+  
+</div>
+
+
+

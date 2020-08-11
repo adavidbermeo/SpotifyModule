@@ -1,0 +1,8 @@
+name: SpotifyMusic
+description: Custom module for listening to Spotify Music
+type: module
+version: 1.0
+core: 8.x
+dependencies:
+  - drupal:views
+package: SpotifyMusic

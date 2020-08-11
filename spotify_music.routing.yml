@@ -1,0 +1,15 @@
+spotify_music.first_page:
+  path: '/lanzamientos'
+  defaults:
+    _controller: '\Drupal\spotify_music\Controller\LanzamientosController::content'
+    _title: 'New Spotify Releases'
+  requirements:
+    _permission: 'access content'
+
+spotify_music.artista_info:
+  path: '/artista/{id}'
+  defaults:
+    _controller: '\Drupal\spotify_music\Controller\ArtistaController::content'
+    _title: 'Singer Info'
+  requirements:
+    _permission: 'access content'
